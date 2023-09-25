@@ -1,0 +1,413 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:400,700|Montserrat:900");
+html {
+  display: grid;
+  min-height: 100%;
+}
+
+body {
+  text-align: center;
+  display: grid;
+  background: #624b8e;
+}
+#inptbox{
+  text-align: center;
+  margin-top: 10%;
+}
+#inpt{
+  width:  300px;
+  font-size: 17px;
+  border-radius: 25px;
+  border-style: none;
+  padding: 15px;
+}
+
+#container {
+  position: relative;
+  margin: auto;
+  overflow: hidden;
+  width: 700px;
+}
+
+h1 {
+  font-family: "Lato", sans-serif;
+  text-align: center;
+  margin-top: 2em;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  color: #f67474;
+}
+
+#age{
+  display: flex;
+  justify-content: center;
+  height: fit-content;
+}
+
+#timer {
+  color: #ff1a66;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Lato", sans-serif;
+  font-size: 0.7em;
+  letter-spacing: 5px;
+  margin-top: 25%;
+}
+
+.days, .hours, .minutes, .seconds {
+  display: inline-block;
+  padding: 20px;
+  width: 120px;
+  border-radius: 10px;
+}
+
+.days {
+  background: #4d94ff;
+}
+
+.hours {
+  background: #ff1a66;
+  color: #183059;
+}
+
+.minutes {
+  background: #ff99cc;
+}
+
+.seconds {
+  background: #cc99ff;
+}
+.numbers {
+  font-family: "Montserrat", sans-serif;
+  color: #183059;
+  font-size: 5em;
+}
+
+.white {
+  position: absolute;
+  background: #ff1a66;
+  height: 85px;
+  width: 75px;
+  left: 30%;
+  top: 4%;
+}
+.white .triangle {
+  border-bottom: 14px solid #ff1a66;
+}
+.white .string {
+  background: #ff1a66;
+  border: 1px solid #ff1a66;
+}
+
+.red {
+  position: absolute;
+  background: #4d94ff;
+  left: 18%;
+  top: 9%;
+  height: 65px;
+  width: 70px;
+}
+.red .triangle {
+  border-bottom: 14px solid #4d94ff;
+}
+.red .string {
+  background: #4d94ff;
+  border: 1px solid #4d94ff;
+}
+
+.blue {
+  position: absolute;
+  background: #ff99cc;
+  height: 80px;
+  width: 80px;
+  left: 60%;
+  top: 5%;
+}
+.blue .triangle {
+  border-bottom: 14px solid #ff99cc;
+}
+.blue .string {
+  background: #ff99cc;
+  border: 1px solid #ff99cc;
+}
+
+.balloon {
+  border: 1px solid #000;
+  border-radius: 50% 50% 50% 50%/40% 40% 55% 55%;
+  z-index: 2;
+}
+
+.eye {
+  position: absolute;
+  width: 7px;
+  height: 7px;
+  top: 40%;
+  left: 22%;
+  background: #000;
+  border-radius: 50%;
+}
+.eye:after {
+  content: "";
+  left: 35px;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #000;
+  position: absolute;
+}
+
+.mouth {
+  position: absolute;
+  top: 45%;
+  left: 43%;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+}
+
+.happy {
+  border: 2px solid;
+  border-color: transparent #000 #000 transparent;
+  transform: rotate(45deg);
+}
+
+.triangle {
+  position: absolute;
+  left: 40%;
+  bottom: -10%;
+  width: 0;
+  height: 0;
+  border-left: 7px solid transparent;
+  border-right: 7px solid transparent;
+}
+
+.string {
+  position: absolute;
+  height: 70px;
+  width: 1px;
+  left: 48%;
+  top: 100%;
+  z-index: -1;
+}
+
+.star {
+  width: 20px;
+  height: 20px;
+  background: #ff1a66;
+  -webkit-clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+  clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+}
+
+.star-red {
+  width: 30px;
+  height: 30px;
+  margin-left: 51px;
+  margin-top: -5px;
+  background: #4d94ff;
+  -webkit-clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+  clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  text-transform: uppercase;
+  padding: 10px;
+  font-family: "Lato", sans-serif;
+  font-size: 0.7em;
+}
+footer p {
+  letter-spacing: 3px;
+  color: #4d94ff;
+}
+footer a {
+  color: #ff1a66;
+  text-decoration: none;
+}
+footer a:hover {
+  color: #ff99cc;
+}
+footer #container {
+  position: relative;
+  margin: auto;
+  overflow: hidden;
+  width: 650px;
+  height: 480px;
+}
+footer h1 {
+  font-family: "Lato", sans-serif;
+  text-align: center;
+  margin-top: 2em;
+  font-size: 1em;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  color: #ff1a66;
+}
+footer #timer {
+  color: #ff1a66;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Lato", sans-serif;
+  font-size: 0.7em;
+  letter-spacing: 5px;
+  margin-top: 25%;
+}
+footer .days2, footer .hours2, footer .minutes2, footer .seconds2 {
+  display: inline-block;
+  padding: 20px;
+  width: 100px;
+  border-radius: 5px;
+}
+footer .days2 {
+  background: #4d94ff;
+}
+footer .hours2 {
+  background: #ff1a66;
+  color: #183059;
+}
+footer .minutes2 {
+  background: #ff99cc;
+}
+footer .seconds2 {
+  background: #cc99ff;
+}
+footer .numbers {
+  font-family: "Montserrat", sans-serif;
+  color: #183059;
+  font-size: 5em;
+}
+footer .white {
+  position: absolute;
+  background: #ff1a66;
+  height: 85px;
+  width: 75px;
+  left: 30%;
+  top: 2%;
+}
+footer .white .triangle {
+  border-bottom: 14px solid #ff1a66;
+}
+footer .white .string {
+  background: #ff1a66;
+  border: 1px solid #ff1a66;
+}
+footer .red {
+  position: absolute;
+  background: #4d94ff;
+  left: 18%;
+  top: 9%;
+  height: 65px;
+  width: 70px;
+}
+footer .red .triangle {
+  border-bottom: 14px solid #4d94ff;
+}
+footer .red .string {
+  background: #4d94ff;
+  border: 1px solid #4d94ff;
+}
+footer .blue {
+  position: absolute;
+  background: #ff99cc;
+  height: 80px;
+  width: 80px;
+  left: 60%;
+  top: 5%;
+}
+footer .blue .triangle {
+  border-bottom: 14px solid #ff99cc;
+}
+footer .blue .string {
+  background: #ff99cc;
+  border: 1px solid #ff99cc;
+}
+footer .balloon {
+  border: 1px solid #000;
+  border-radius: 50% 50% 50% 50%/40% 40% 55% 55%;
+  z-index: 2;
+}
+footer .eye {
+  position: absolute;
+  width: 7px;
+  height: 7px;
+  top: 40%;
+  left: 22%;
+  background: #000;
+  border-radius: 50%;
+}
+footer .eye:after {
+  content: "";
+  left: 35px;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #000;
+  position: absolute;
+}
+footer .mouth {
+  position: absolute;
+  top: 45%;
+  left: 43%;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+}
+footer .happy {
+  border: 2px solid;
+  border-color: transparent #000 #000 transparent;
+  transform: rotate(45deg);
+}
+footer .triangle {
+  position: absolute;
+  left: 40%;
+  bottom: -10%;
+  width: 0;
+  height: 0;
+  border-left: 7px solid transparent;
+  border-right: 7px solid transparent;
+}
+footer .string {
+  position: absolute;
+  height: 70px;
+  width: 1px;
+  left: 48%;
+  top: 100%;
+  z-index: -1;
+}
+footer .star {
+  width: 20px;
+  height: 20px;
+  background: #ff1a66;
+  -webkit-clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+  clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+}
+footer .star-red {
+  width: 30px;
+  height: 30px;
+  margin-left: 51px;
+  margin-top: -5px;
+  background: #4d94ff;
+  -webkit-clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+  clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+}
+footer footer {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  text-transform: uppercase;
+  padding: 10px;
+  font-family: "Lato", sans-serif;
+  font-size: 0.7em;
+}
+footer footer p {
+  letter-spacing: 3px;
+  color: #4d94ff;
+}
+footer footer a {
+  color: #ff1a66;
+  text-decoration: none;
+}
+footer footer a:hover {
+  color: #ff99cc;
+}/*# sourceMappingURL=style.css.map */
